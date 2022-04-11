@@ -4,103 +4,94 @@
     src: url('fonts/Ubuntu-Light.ttf');
 }
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
 
-body
-{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    max-width: 1300px;
     background-color: #d9e7f1;
 }
 
-.card
-{
-    position: relative;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 320px;
-    height: 430px;
+    height: 450px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 25px 25px 50px rgba(9, 148, 255, 0.1),
     -10px -10px 30px rgba(9, 148, 255, 0.1);
 }
 
-
-.image-box
-{
-    position: relative;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 300px;
     overflow: hidden;
-    padding: 20px;
+    padding: 0 20px;
     border-radius: 6px;
 }
 
-.img
-{
+.header img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 90%;
+    background-size: cover;
     border-radius: 6px;
 }
 
-.card-1
-{
+.bio {
     width: 100%;
-    padding: 30px 20px;
-    /*display: grid;*/
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.card1 h3
-{
+.bio h3 {
     color: #329ff1;
     text-transform: uppercase;
     font-weight: 600;
-    text-align: center;
 }
 
-.card1 p
-{
+.bio p {
     color: #333;
-    text-transform: initial;
     font-weight: 500;
-    font-size: 14px;
-    text-align: center;
+    font-size: 1rem;
     padding-top: 5px;
 }
 
-.bar
-{
-    position: relative;
+.social-media {
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-li
-{
+    width: 100%;
     list-style: none;
 }
-.m1
-{
-    width: 35px;
-    height: 35px;
-    margin-top: 30px;
-    border: 1px #fff solid;
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 5px 5px 10px rgba(9, 148, 255, 0.25),
-    -2px -2px 5px rgba(9, 148, 255, 0.05);
+
+.social-media li {
+    padding: 0 1rem;
 }
 
-#m2
-{
-    margin-left: 30px;
+.social-media img {
+    width: 50px;
+    height: 50px;
+    border: 1px #fff solid;
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(9, 148, 255, 0.25),
+    -2px -2px 5px rgba(9, 148, 255, 0.05);
 }
